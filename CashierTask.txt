@@ -1,0 +1,65 @@
+TRETIRAR DINERO: 
+Before:
+*Tener cuenta activa
+*Tener tarjeta
+*Ir hasta un cajero
+*Sacar la tarjeta
+*Ingresar la tarjeta
+ Test:
+*Seleccionar la opción retirar dinero de cuenta de ahorro
+*Seleccionar el valor
+*Confirmar 
+*Ingresa la clave
+*Enviar clave clave
+*Esperar a que el cajero procese la transacción
+*Retirar el diner
+*Ver comprobante
+*Seleccionar la manera de ver el saldo
+Afer:
+*Borrar cualquier información de pantalla
+*Retirar tarjeta
+*Verificar inicio sin información de usuario
+
+********************************************************************************
+
+TRANSFERIR DINERO
+Before:
+*Tener cuenta activa
+*Tener tarjeta
+*Ir hasta un cajero
+*Sacar la tarjeta
+*Ingresar la tarjeta
+Test:
+*Seleccionar transferencia
+*Seleccionar el tipo de cuenta a transferir (Si es ahorro o corriente)
+*Ingresar la cuenta destino
+*Ingresar monto
+*Ingresar clave
+*Enviar clave
+*Esperar a que el cajero procese la transacción
+*Ver comprobante
+*Seleccionar manera de ver el saldo
+Afer:
+*Borrar cualquier información de pantalla
+*Retirar tarjeta
+*Verificar inicio sin información de usuario
+
+********************************************************************************
+
+VER SALDO:
+Before:
+*Tener cuenta activa
+*Tener tarjeta
+*Ir hasta un cajero
+*Sacar la tarjeta
+*Ingresar la tarjeta
+Test:
+*Seleccionar ver saldo
+*Ingresar clave
+*Enviar clave
+*Seleccionar la manera de ver el saldo
+Afer:
+*Borrar cualquier información de pantalla
+*Retirar tarjeta
+*Verificar inicio sin información de usuario
+
