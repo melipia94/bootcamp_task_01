@@ -2,6 +2,7 @@ package com.automation.training;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class MyDriver {
@@ -14,8 +15,10 @@ public class MyDriver {
 			driver = new FirefoxDriver();
 			break;
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", "/Users/santiago.hernandez/Documents/chromedriver");
-			driver = new ChromeDriver();
+			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("start-maximized");
+			driver = new ChromeDriver(options);
 			break;
 		default:
 			break;
