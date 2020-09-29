@@ -26,9 +26,11 @@ public class BaseTests  {
 	}
 	
 	@BeforeClass(alwaysRun=true)
-	public void beforeClass() {
+	@Parameters({"url"})
+	public void beforeClass(String url) {
 	    espnHome = new ESPNHomePage(myDriver.getDriver());
-	    BasePage.getURL("https://www.espn.com/?src=com&_adblock=true");
+	    BasePage.getURL(url);
+	 
 		
 	}
 	

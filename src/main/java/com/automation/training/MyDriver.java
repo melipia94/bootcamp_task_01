@@ -1,5 +1,7 @@
 package com.automation.training;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -19,6 +21,7 @@ public class MyDriver {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("start-maximized");
 			driver = new ChromeDriver(options);
+			//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			break;
 		default:
 			break;

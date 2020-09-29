@@ -2,11 +2,15 @@
 
 <suite name="My test suite" verbose="1">
 	<parameter name="browser" value="chrome"/>
+   <parameter name="url" value="https://www.espn.com/?src=com&#38;_adblock=true"/>
+      
 	<test name="My first test">
-		<classes>
-			<class name="com.automation.training.tests.ESPNTests">
-                      
-                     </class>
+		<classes> 
+ 			<class name="com.automation.training.tests.ESPNTestsCreateAccount"> </class>
+			<class name="com.automation.training.tests.ESPNTestsLogIn"> </class>
+			<class name="com.automation.training.tests.ESPNTestsLogOut"> </class>
+
+		   <class name="com.automation.training.tests.ESPNTestsDeletAccount"> </class>
 		</classes>
 	</test>
 </suite>
