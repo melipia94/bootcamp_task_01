@@ -9,8 +9,7 @@ public class ESPNHomePage extends BasePage  {
 
 	public ESPNHomePage(WebDriver driver) {
 		super(driver);
-		driver.getCurrentUrl();
-		System.out.println(driver.getCurrentUrl());
+	
 		
 	}
 	public By logOutBy = By.cssSelector("#global-user-trigger + div.global-user .account-management li a[onclick]");

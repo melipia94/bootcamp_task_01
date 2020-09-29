@@ -21,7 +21,6 @@ public class ESPNTestsDeletAccount extends BaseTests{
 		assertEquals("Melissa", home.checkUserName());
 		loginPage = home.goToProfile().deleteAccount().goToLoginPage().logInFail("melipia103@prueba.com", "prueba123");
 		assertEquals("Account Deactivated", loginPage.checkLogInFail());
-	
 		
 	}
 }

@@ -26,7 +26,6 @@ public abstract class BasePage {
 	}
 
 	public void dispose() {
-		System.out.println("entre al dipose");
 		if (driver != null) {
 			driver.quit();
 		}

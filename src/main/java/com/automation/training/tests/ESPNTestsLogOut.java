@@ -10,11 +10,12 @@ import com.automation.training.pages.ESPNHomePage;
 import com.automation.training.pages.LoginPage;
 
 
+
 public class ESPNTestsLogOut extends BaseTests{
 	
 
 	@Test
-	public void testESPNLogin(){
+	public void testESPNLogOut(){
 		ESPNHomePage home = getESPNHomePage();
 		LoginPage loginPage = home.goToLoginPage();
 	    home = loginPage.logIn("melipia9@prueba.com", "prueba123");

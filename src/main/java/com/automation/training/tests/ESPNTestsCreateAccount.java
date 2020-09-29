@@ -15,7 +15,7 @@ public class ESPNTestsCreateAccount extends BaseTests{
 	public void testESPNCrearAccountSuccessful(){
 		ESPNHomePage home = getESPNHomePage();
 		LoginPage loginPage = home.goToLoginPage();
-	    SignUpPage signUpPage = loginPage.selectSignUp().putTheInformation("Melissa", "Pineda","melipia55@prueba.com", "prueba123" );
+	    SignUpPage signUpPage = loginPage.selectSignUp().putTheInformation("Melissa", "Pineda","melipia105@prueba.com", "prueba123" );
 		home = signUpPage.confirmInformation();
 		assertEquals("Melissa", home.checkUserName());
 	}
