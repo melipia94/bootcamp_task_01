@@ -3,7 +3,7 @@ package screens;
 import static io.appium.java_client.pagefactory.LocatorGroupStrategy.ALL_POSSIBLE;
 import static java.lang.String.format;
 
-import java.util.Calendar;
+
 import java.util.List;
 
 import org.pmw.tinylog.Logger;
@@ -91,26 +91,65 @@ public class HomePage extends BaseScreen {
 	 * 
 	 */
 
+	/**
+	 * check the page
+	 * 
+	 * 
+	 * @param 
+	 */
 	public HomePage checkPrincipalPage() {
 		CustomWait.waitAndroidElementVisibility(driver,searchHotelsButton, 200);
 		return this;
 	}
 	
+	/**
+	 * Return the navigate bar
+	 * 
+	 * 
+	 * @param 
+	 */
 	public NavigationBarPage goToNavigationBar() {
 		return new NavigationBarPage(driver);
 	}
+	
+	/**
+	 * Return if the element isn't present
+	 * 
+	 * 
+	 * @param 
+	 */
 	
 	public boolean checkDataPrivacityInvisible() {
 		return isPresent(accept);
 	}
 	
+	/**
+	 * Return if the element is present
+	 * 
+	 * 
+	 * @param 
+	 */
+	
+	
 	public boolean checkDataCalendarVisible() {
 		return isPresent(calendar);
 	}
 	
+	/**
+	 * Return the confirmDate button state
+	 * 
+	 * 
+	 * @param 
+	 */
 	public boolean checkConfirm() {
 		return isEnabled(confirmDate);
 	} 
+	/**
+	 * Search the destination
+	 * 
+	 * 
+	 * @param text: place, text: country
+	 */
 	public HomePage typeDestination(String place, String country) {
 		destinationPlace = place;
 		String destinationPlace = format("new UiSelector().textContains(\"%s\")", " " +country+",");
@@ -125,7 +164,12 @@ public class HomePage extends BaseScreen {
 		clickOn(daySelected.get(0));
 		return this;
 	}
-	
+	/**
+	 * Search the dates
+	 * 
+	 * 
+	 * @param text : startMonth, text : startDay, text : finalMonth, text : finalDay, text : year
+	 */
 	public HomePage selectDate(String startMonth, String startDay, String finalMonth, String finalDay, String year) {
 		day1=startDay;
 		day2= finalDay;
@@ -152,10 +196,22 @@ public class HomePage extends BaseScreen {
 		return this;
 	}
 	
+	/**
+	 * check the travel information
+	 * 
+	 * 
+	 * @param 
+	 */
 	public boolean checkDestinstionAndDate() {
 		CustomWait.waitAndroidElementVisibility(driver,finalDestination, 60);
 		return getText(finalDestination).contains("Cartagena")&&getText(dates).contains(day1)&&getText(dates).contains(day2);
 	}
+	/**
+	 * check the next month
+	 * 
+	 * 
+	 * @param 
+	 */
 	
 	public String nextMonth(String month) {
 		String nextMonth = "enero";

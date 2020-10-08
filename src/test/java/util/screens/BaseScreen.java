@@ -62,34 +62,80 @@ public abstract class BaseScreen {
 		AndroidElement textOnElement = driver.findElementByAndroidUIAutomator(format(automator, text));
 		Logger.info(textOnElement.getText());
 	}
+	
+	/**
+	 * Scroll on AndroidElement
+	 *
+	 * @param AndroidElement : element
+	 */
 	public void clickOn(AndroidElement element){
 		element.click();
 	}
+	/**
+	 * Get some attribute 
+	 *
+	 * @param AndroidElement : element, text : attribute
+	 */
 	public String getAttribute(AndroidElement element, String attribute){
 		return element.getAttribute(attribute);
 	}
+	/**
+	 * Return if some element is present the view
+	 *
+	 * @param List AndroidElement : elements
+	 */
 	
 	public boolean isPresent(List<AndroidElement> elements){
 		return elements.size() != 0;    
 	}
 	
+	/**
+	 * Return if some element is enabled
+	 *
+	 * @param AndroidElement : elements
+	 */
+	
 	public boolean isEnabled(AndroidElement elements){
 		return elements.isEnabled();   
 	}
 	
+	
+	/**
+	 * Return if some element is displayed
+	 *
+	 * @param AndroidElement : elements
+	 */
 	public boolean isDispleyed(AndroidElement elements){
 		return elements.isDisplayed();   
 	}
 	
-	
+	/**
+	 * Return the element text 
+	 *
+	 * @param AndroidElement : elements
+	 */
 	public String getText(AndroidElement element){
 		String text = element.getText();
 		return text;
 	}
+	/**
+	 * Return if some element is displayed
+	 *
+	 * @param AndroidElement : elements
+	 */
+	
 	public void sendKey(AndroidElement element, String text){
 		element.sendKeys(text);
 	}
-	public void scrollAtions(AndroidElement slider) {
+	
+
+	/**
+	 *scroll some space
+	 *
+	 * @param 
+	 */
+		
+	public void scrollAtions() {
 		Dimension dimension = driver.manage().window().getSize();
 	    int scrollStart = (int) (dimension.getHeight() * 0.5);
 	    int scrollEnd = (int) (dimension.getHeight() * 0.2);{

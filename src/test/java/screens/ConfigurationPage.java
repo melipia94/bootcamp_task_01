@@ -73,6 +73,12 @@ public class ConfigurationPage extends BaseScreen {
 		return isPresent(createAccount);
 	}
 	
+	/**
+	 * Return the data configuration page
+	 * 
+	 * 
+	 * @param 
+	 */
 	
 	public ConfigurationPage goToDataPrivacityConfiguration() {
 		scrollToText("Configurar privacidad de datos");
@@ -82,6 +88,12 @@ public class ConfigurationPage extends BaseScreen {
 		
 	}
 
+	/**
+	 * Change the data configurations
+	 * 
+	 * 
+	 * @param 
+	 */
 	public ConfigurationPage changeDataPrivacityConfiguration() {
 		initialParams = putInitialConfiguration();
 		clickOn(appsFlyer);
@@ -91,7 +103,12 @@ public class ConfigurationPage extends BaseScreen {
 		return this;
 	}
 
-	
+	/**
+	 * save the initial configurations
+	 * 
+	 * 
+	 * @param 
+	 */
 	public Map<String, Object> putInitialConfiguration() {
 		Map<String, Object>initialParams = new HashMap<String,  Object>();
 		initialParams.put("AppsFlyer",getAttribute(appsFlyer, "checked"));
@@ -101,6 +118,12 @@ public class ConfigurationPage extends BaseScreen {
 		return initialParams;
 	}
 	
+	/**
+	 * save the final configurations
+	 * 
+	 * 
+	 * @param 
+	 */
 	
 	public Map<String, Object> putFinalConfiguration() {
 		Map<String,Object>finalParams = new HashMap<String, Object>();
@@ -110,6 +133,13 @@ public class ConfigurationPage extends BaseScreen {
 		finalParams.put("facebook",getAttribute(facebook, "checked"));
 		return finalParams;
 	}
+	
+	/**
+	 * return initial configurations
+	 * 
+	 * 
+	 * @param 
+	 */
 	
 	public Map<String, Object> getInitialConfiguration(){
 		return initialParams;

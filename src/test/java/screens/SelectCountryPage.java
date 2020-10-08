@@ -62,7 +62,7 @@ public class SelectCountryPage extends BaseScreen {
 		Logger.info("Alert Message: " + welcome.getText());
 		clickOn(welcome);
 		scrollToText(country);
-		scrollAtions(findElementByUISelector(lenguageElement));
+		scrollAtions();
 		CustomWait.waitInSeconds(5);
 		clickOn(findElementByUISelector(lenguageElement));
 		return this;

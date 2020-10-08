@@ -65,11 +65,22 @@ public class NavigationBarPage extends BaseScreen {
 	 * 
 	 */
 
-
+	/**
+	 * verify navigation bar app
+	 * 
+	 * 
+	 * @param 
+	 */
 	
 	public boolean checkNavigationBar() {
 		return isPresent(home)&&isPresent(configuration)&&isPresent(sorprised)&&isPresent(favourites);
 	}
+	/**
+	 * Return the configuration page
+	 * 
+	 * 
+	 * @param 
+	 */
 	
 	public ConfigurationPage goToConfiguration() {
 		clickOn((AndroidElement) configurationElement);

@@ -46,18 +46,36 @@ public class DataPrivacityPage extends BaseScreen {
 	
 	
 	
+	/**
+	 * accept the data privacity conditions
+	 * 
+	 * 
+	 * @param 
+	 */
 	public HomePage acceptConditions() {
 		CustomWait.waitAndroidElementVisibility(driver, accept, 60);
 		clickOn(accept);
 		return new HomePage(driver);
 	}
 	
+	/**
+	 * check the title of the page
+	 * 
+	 * 
+	 * @param 
+	 */
 	
 	public String checkTile() {
 		CustomWait.waitAndroidElementVisibility(driver, title, 60);
 		String titleString = getText(title);
 		return titleString;
 	}
+	/**
+	 * check the texts of the page
+	 * 
+	 * 
+	 * @param 
+	 */
 	public String[] checkText() {
 		String[] titleString = {"", "", ""};
 		titleString[0] = getText(body1);
