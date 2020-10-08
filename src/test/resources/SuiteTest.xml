@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My suite">
+<parameter name="country" value="Colombia"></parameter>
+	<parameter name="destination" value="Cartagena"></parameter>
+	<parameter name="year" value="2020"></parameter>
+	<parameter name="initialMonth" value="noviembre"></parameter>
+	<parameter name="initialDay" value="1"></parameter>
+	<parameter name="finalMonth" value="noviembre"></parameter>
+        <parameter name="finalDay" value="5"></parameter>
+	<test name="Data privacity Test">
+		<classes>
+			<class name="tests.DataPrivacy"></class>
+		</classes>
+	</test>
+	<test name="Search Page Test">
+		<classes>
+			<class name="tests.SearchPages"></class>
+		</classes>
+	</test>
+<test name="Navigation Bar Elements Test">
+		<classes>
+			<class name="tests.NavigationBarElements"></class>
+		</classes>
+	</test>
+<test name="Configuration Test">
+		<classes>
+			<class name="tests.Configuration"></class>
+		</classes>
+
+</test>
+	
+</suite> 

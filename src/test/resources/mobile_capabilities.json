@@ -1,0 +1,8 @@
+{
+	"deviceName": "Nexus 6P API 30",
+	"platformName": "Android",
+	"platformVersion": "11",
+	"appPackage": "com.trivago",
+	"app": "D:\\Documents\\apk\\trivago.apk",
+	"appActivity": "com.trivago.ft.main.frontend.MainActivity"
+}
