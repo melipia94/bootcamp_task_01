@@ -97,16 +97,18 @@ public class BankTransactionsServices extends BaseService {
     
     public BankUsers createUser() {
     	BankUsers user = new BankUsers();
+    	String [] transactionType = {"Ahorro", "Credito", "Adelanta saldo", "Inversion", "Prestamo", "Pagos"};
+    	String [] country = {"Colombia", "Argentina", "Estados Undos", "Panama", "Venezuela", "Chile", "Brasil", "Mexico", "Canada", "Uruguay", "Paraguay", "Europa", "Francia", "Italia", "Aruba", "Egito", "Australia"};
     	FakeValuesService faker = new FakeValuesService(
     		      new Locale("es-CO"), new RandomService());
     	user.setName(faker.letterify("????"));
     	user.setLastName(faker.letterify("??????"));
     	user.setAccountNumber(faker.numerify("####"));
     	user.setAmount(faker.numerify("#####"));
-    	user.setTransactionType("Ahrros");
+    	user.setTransactionType(transactionType[(int) Math.floor(Math.random()*6+1)-1]);
     	user.setEmail(faker.letterify("??????")+"@gmail.com");
     	user.setActive(faker.letterify("??????"));
-    	user.setCountry(faker.letterify("??????"));
+    	user.setCountry(country[(int) Math.floor(Math.random()*17+1)-1]);
     	user.setTelephone(faker.numerify("301#######"));
     	return user;
      }

@@ -8,7 +8,7 @@
 
 	<test name="Some Test">
 		<classes>
-			<class name="academyapi.VerifyJiraNumber"></class>
+			<class name="academyapi.CreateUserTest"></class>
 		</classes>
 	</test>
 </suite> 
