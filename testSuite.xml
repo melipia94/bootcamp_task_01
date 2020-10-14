@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Api test">
+	<!-- some parameter -->
+	<parameter name="name" value="value"></parameter>
+	<!-- some parameter -->
+	<parameter name="name" value="value"></parameter>
+
+	<test name="Api Empty">
+		<classes>
+			<class name="academyapi.ResponseEmptyTest"></class>
+		</classes>
+	</test>
+
+	<test name="Create User Test">
+		<classes>
+			<class name="academyapi.CreateUserTest"></class>
+		</classes>
+	</test>
+
+	<test name="Create User Test Negative Test">
+		<classes>
+			<class name="academyapi.CreateUserTestNegativeTest"></class>
+		</classes>
+	</test>
+
+	<test name="Create Jira Bug">
+		<classes>
+			<class name="academyapi.CreateJiraBug"></class>
+		</classes>
+	</test>
+
+	<test name="Verify Jira Number">
+		<classes>
+			<class name="academyapi.VerifyJiraNumber"></class>
+		</classes>
+	</test>
+
+	<test name="Create Jira Bug Mockapi">
+		<classes>
+			<class name="academyapi.CreateJiraBugMockapi"></class>
+		</classes>
+	</test>
+
+</suite> 

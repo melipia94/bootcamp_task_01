@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Api_test">
+              <span class="suite-name border-passed">Api test</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Api_test">
+                    <span>D:\workspace\API-Skeleton-testing\testSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Api_test">
+                    <span class="test-stats">6 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Api_test">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Api_test">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Api_test">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Api_test">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Api_test">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Api_test" class="hide-methods passed suite-Api_test"> (hide)</a> <!-- hide-methods passed suite-Api_test -->
+                      <a href="#" panel-name="suite-Api_test" class="show-methods passed suite-Api_test"> (show)</a> <!-- show-methods passed suite-Api_test -->
+                    </span>
+                    <div class="method-list-content passed suite-Api_test">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Api_test" title="academyapi.CreateJiraBug" hash-for-method="createBug">createBug</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Api_test" title="academyapi.CreateJiraBugMockapi" hash-for-method="createBugMockapi">createBugMockapi</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Api_test" title="academyapi.CreateUserTest" hash-for-method="createUser">createUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Api_test" title="academyapi.CreateUserTestNegativeTest" hash-for-method="createUserTestNegativeTest">createUserTestNegativeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Api_test" title="academyapi.ResponseEmptyTest" hash-for-method="responseEmpty">responseEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Api_test" title="academyapi.VerifyJiraNumber" hash-for-method="verifyJiraNumber">verifyJiraNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Api_test -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Api_test" class="panel Api_test">
+          <div class="suite-Api_test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">academyapi.CreateJiraBug</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createBug">
+                  </a> <!-- createBug -->
+                  <span class="method-name">createBug</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Api_test-class-passed -->
+          <div class="suite-Api_test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">academyapi.CreateUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUser">
+                  </a> <!-- createUser -->
+                  <span class="method-name">createUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Api_test-class-passed -->
+          <div class="suite-Api_test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">academyapi.ResponseEmptyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="responseEmpty">
+                  </a> <!-- responseEmpty -->
+                  <span class="method-name">responseEmpty</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Api_test-class-passed -->
+          <div class="suite-Api_test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">academyapi.CreateJiraBugMockapi</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createBugMockapi">
+                  </a> <!-- createBugMockapi -->
+                  <span class="method-name">createBugMockapi</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Api_test-class-passed -->
+          <div class="suite-Api_test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">academyapi.CreateUserTestNegativeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUserTestNegativeTest">
+                  </a> <!-- createUserTestNegativeTest -->
+                  <span class="method-name">createUserTestNegativeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Api_test-class-passed -->
+          <div class="suite-Api_test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">academyapi.VerifyJiraNumber</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJiraNumber">
+                  </a> <!-- verifyJiraNumber -->
+                  <span class="method-name">verifyJiraNumber</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Api_test-class-passed -->
+        </div> <!-- panel Api_test -->
+        <div panel-name="test-xml-Api_test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\workspace\API-Skeleton-testing\testSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Api test&quot;&gt;
+  &lt;parameter name=&quot;name&quot; value=&quot;value&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Api Empty&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;academyapi.ResponseEmptyTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Api Empty --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Create User Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;academyapi.CreateUserTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Create User Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Create User Test Negative Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;academyapi.CreateUserTestNegativeTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Create User Test Negative Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Create Jira Bug&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;academyapi.CreateJiraBug&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Create Jira Bug --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Verify Jira Number&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;academyapi.VerifyJiraNumber&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Verify Jira Number --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Create Jira Bug Mockapi&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;academyapi.CreateJiraBugMockapi&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Create Jira Bug Mockapi --&gt;
+&lt;/suite&gt; &lt;!-- Api test --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Api_test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Api test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Api Empty (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Create User Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Create User Test Negative Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Create Jira Bug (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Verify Jira Number (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Create Jira Bug Mockapi (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Api_test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Api test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Api_test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Api test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Api_test');
+function tableData_Api_test() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'responseEmpty')
+data.setCell(0, 2, 'academyapi.ResponseEmptyTest')
+data.setCell(0, 3, 4014);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'createBugMockapi')
+data.setCell(1, 2, 'academyapi.CreateJiraBugMockapi')
+data.setCell(1, 3, 2406);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'createUser')
+data.setCell(2, 2, 'academyapi.CreateUserTest')
+data.setCell(2, 3, 2393);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyJiraNumber')
+data.setCell(3, 2, 'academyapi.VerifyJiraNumber')
+data.setCell(3, 3, 2278);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'createBug')
+data.setCell(4, 2, 'academyapi.CreateJiraBug')
+data.setCell(4, 3, 2076);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'createUserTestNegativeTest')
+data.setCell(5, 2, 'academyapi.CreateUserTestNegativeTest')
+data.setCell(5, 3, 1598);
+window.suiteTableData['Api_test']= { tableData: data, tableDiv: 'times-div-Api_test'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <div id="times-div-Api_test">
+              </div> <!-- times-div-Api_test -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Api_test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Api test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Api_test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Api_test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">academyapi.ResponseEmptyTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">responseEmpty</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">academyapi.CreateUserTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createUser</span>
+                <span class="method-start">4037 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">academyapi.CreateUserTestNegativeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createUserTestNegativeTest</span>
+                <span class="method-start">6438 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">academyapi.CreateJiraBug</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createBug</span>
+                <span class="method-start">8052 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">academyapi.VerifyJiraNumber</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyJiraNumber</span>
+                <span class="method-start">10158 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">academyapi.CreateJiraBugMockapi</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createBugMockapi</span>
+                <span class="method-start">12455 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
