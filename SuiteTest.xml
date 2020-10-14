@@ -8,7 +8,7 @@
 
 	<test name="Some Test">
 		<classes>
-			<class name="academyapi.CreateJiraBugMockapi"></class>
+			<class name="academyapi.VerifyJiraNumber"></class>
 		</classes>
 	</test>
 </suite> 

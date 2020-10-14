@@ -4,11 +4,11 @@
   <parameter name="name" value="value"/>
   <test thread-count="5" name="Some Test(failed)">
     <classes>
-      <class name="academyapi.CreateUserTestNegativeTest">
+      <class name="academyapi.VerifyJiraNumber">
         <methods>
-          <include name="createUserTestNegativeTest"/>
+          <include name="verifyJiraNumber"/>
         </methods>
-      </class> <!-- academyapi.CreateUserTestNegativeTest -->
+      </class> <!-- academyapi.VerifyJiraNumber -->
     </classes>
   </test> <!-- Some Test(failed) -->
 </suite> <!-- Failed suite [My suite] -->

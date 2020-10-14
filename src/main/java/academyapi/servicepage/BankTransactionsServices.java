@@ -12,6 +12,10 @@ import com.github.javafaker.service.RandomService;
 import academyapi.baseservice.BaseService;
 import academyapi.pojos.BankUsers;
 import academyapi.pojos.BugJira;
+import academyapi.pojos.Fields;
+import academyapi.pojos.Fields2;
+import academyapi.pojos.Issuetype;
+import academyapi.pojos.Project;
 import io.restassured.response.Response;
 
 /**
@@ -52,18 +56,20 @@ public class BankTransactionsServices extends BaseService {
     	return getStatus(response);
 	   
     }
-    public BugJira getJiraInformation() {
+    public Fields2 getJiraInformation() {
     	Response response = requestGetMethod(url);
-    	BugJira bugJira = new BugJira();
-    	bugJira.setDescription(getBodyParam(response, "fields.description").get(0));
-    	bugJira.setSummary(getBodyParam(response, "fields.summary").get(0));
-    	bugJira.setKey(getBodyParam(response, "fields.project.key").get(0));
-    	bugJira.setName(getBodyParam(response, "fields.issuetype.name").get(0));
-    	bugJira.setProject();
-    	bugJira.setIssueType();
-    	bugJira.setFields();
-    	bugJira.setFields2();
-    	return bugJira;
+    	Fields fields = new Fields();
+        Fields2 fields2 = new Fields2();
+        Project project = new Project();
+        Issuetype issueType = new Issuetype();
+    	fields.setDescription(getBodyParam(response, "fields.description").get(0));
+    	fields.setSummary(getBodyParam(response, "fields.summary").get(0));
+    	project.setKey(getBodyParam(response, "fields.project.key").get(0));
+    	issueType.setName(getBodyParam(response, "fields.issuetype.name").get(0));
+    	fields.setProject(project);
+    	fields.setIssuetype(issueType);
+    	fields2.setFields(fields);
+        return fields2;
     	
     }
     

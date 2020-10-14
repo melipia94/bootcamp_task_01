@@ -2,52 +2,52 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Api test" duration-ms="14882" started-at="2020-10-14T01:39:05Z" finished-at="2020-10-14T01:39:20Z">
+  <suite name="Api test" duration-ms="13387" started-at="2020-10-14T02:37:27Z" finished-at="2020-10-14T02:37:40Z">
     <groups>
     </groups>
-    <test name="Api Empty" duration-ms="4037" started-at="2020-10-14T01:39:05Z" finished-at="2020-10-14T01:39:09Z">
+    <test name="Api Empty" duration-ms="3775" started-at="2020-10-14T02:37:27Z" finished-at="2020-10-14T02:37:31Z">
       <class name="academyapi.ResponseEmptyTest">
-        <test-method status="PASS" signature="responseEmpty()[pri:0, instance:academyapi.ResponseEmptyTest@5e5792a0]" name="responseEmpty" duration-ms="4014" started-at="2020-10-14T01:39:05Z" finished-at="2020-10-14T01:39:09Z">
+        <test-method status="PASS" signature="responseEmpty()[pri:0, instance:academyapi.ResponseEmptyTest@5e5792a0]" name="responseEmpty" duration-ms="3746" started-at="2020-10-14T02:37:27Z" finished-at="2020-10-14T02:37:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- responseEmpty -->
       </class> <!-- academyapi.ResponseEmptyTest -->
     </test> <!-- Api Empty -->
-    <test name="Create User Test" duration-ms="2395" started-at="2020-10-14T01:39:09Z" finished-at="2020-10-14T01:39:12Z">
+    <test name="Create User Test" duration-ms="2326" started-at="2020-10-14T02:37:31Z" finished-at="2020-10-14T02:37:33Z">
       <class name="academyapi.CreateUserTest">
-        <test-method status="PASS" signature="createUser()[pri:0, instance:academyapi.CreateUserTest@6eebc39e]" name="createUser" duration-ms="2393" started-at="2020-10-14T01:39:09Z" finished-at="2020-10-14T01:39:12Z">
+        <test-method status="PASS" signature="createUser()[pri:0, instance:academyapi.CreateUserTest@6eebc39e]" name="createUser" duration-ms="2321" started-at="2020-10-14T02:37:31Z" finished-at="2020-10-14T02:37:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUser -->
       </class> <!-- academyapi.CreateUserTest -->
     </test> <!-- Create User Test -->
-    <test name="Create User Test Negative Test" duration-ms="1604" started-at="2020-10-14T01:39:12Z" finished-at="2020-10-14T01:39:13Z">
+    <test name="Create User Test Negative Test" duration-ms="1305" started-at="2020-10-14T02:37:33Z" finished-at="2020-10-14T02:37:35Z">
       <class name="academyapi.CreateUserTestNegativeTest">
-        <test-method status="PASS" signature="createUserTestNegativeTest()[pri:0, instance:academyapi.CreateUserTestNegativeTest@598067a5]" name="createUserTestNegativeTest" duration-ms="1598" started-at="2020-10-14T01:39:12Z" finished-at="2020-10-14T01:39:13Z">
+        <test-method status="PASS" signature="createUserTestNegativeTest()[pri:0, instance:academyapi.CreateUserTestNegativeTest@598067a5]" name="createUserTestNegativeTest" duration-ms="1299" started-at="2020-10-14T02:37:33Z" finished-at="2020-10-14T02:37:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserTestNegativeTest -->
       </class> <!-- academyapi.CreateUserTestNegativeTest -->
     </test> <!-- Create User Test Negative Test -->
-    <test name="Create Jira Bug" duration-ms="2082" started-at="2020-10-14T01:39:13Z" finished-at="2020-10-14T01:39:15Z">
+    <test name="Create Jira Bug" duration-ms="1127" started-at="2020-10-14T02:37:35Z" finished-at="2020-10-14T02:37:36Z">
       <class name="academyapi.CreateJiraBug">
-        <test-method status="PASS" signature="createBug()[pri:0, instance:academyapi.CreateJiraBug@42dafa95]" name="createBug" duration-ms="2076" started-at="2020-10-14T01:39:13Z" finished-at="2020-10-14T01:39:15Z">
+        <test-method status="PASS" signature="createBug()[pri:0, instance:academyapi.CreateJiraBug@42dafa95]" name="createBug" duration-ms="1120" started-at="2020-10-14T02:37:35Z" finished-at="2020-10-14T02:37:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBug -->
       </class> <!-- academyapi.CreateJiraBug -->
     </test> <!-- Create Jira Bug -->
-    <test name="Verify Jira Number" duration-ms="2286" started-at="2020-10-14T01:39:15Z" finished-at="2020-10-14T01:39:18Z">
+    <test name="Verify Jira Number" duration-ms="2193" started-at="2020-10-14T02:37:36Z" finished-at="2020-10-14T02:37:38Z">
       <class name="academyapi.VerifyJiraNumber">
-        <test-method status="PASS" signature="verifyJiraNumber()[pri:0, instance:academyapi.VerifyJiraNumber@7085bdee]" name="verifyJiraNumber" duration-ms="2278" started-at="2020-10-14T01:39:15Z" finished-at="2020-10-14T01:39:18Z">
+        <test-method status="PASS" signature="verifyJiraNumber()[pri:0, instance:academyapi.VerifyJiraNumber@7085bdee]" name="verifyJiraNumber" duration-ms="2182" started-at="2020-10-14T02:37:36Z" finished-at="2020-10-14T02:37:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyJiraNumber -->
       </class> <!-- academyapi.VerifyJiraNumber -->
     </test> <!-- Verify Jira Number -->
-    <test name="Create Jira Bug Mockapi" duration-ms="2412" started-at="2020-10-14T01:39:18Z" finished-at="2020-10-14T01:39:20Z">
+    <test name="Create Jira Bug Mockapi" duration-ms="2550" started-at="2020-10-14T02:37:38Z" finished-at="2020-10-14T02:37:40Z">
       <class name="academyapi.CreateJiraBugMockapi">
-        <test-method status="PASS" signature="createBugMockapi()[pri:0, instance:academyapi.CreateJiraBugMockapi@3f49dace]" name="createBugMockapi" duration-ms="2406" started-at="2020-10-14T01:39:18Z" finished-at="2020-10-14T01:39:20Z">
+        <test-method status="PASS" signature="createBugMockapi()[pri:0, instance:academyapi.CreateJiraBugMockapi@3f49dace]" name="createBugMockapi" duration-ms="2532" started-at="2020-10-14T02:37:38Z" finished-at="2020-10-14T02:37:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBugMockapi -->

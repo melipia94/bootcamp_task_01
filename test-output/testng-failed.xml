@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Api test]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [My suite]">
   <parameter name="name" value="value"/>
-  <test thread-count="5" name="Create User Test Negative Test(failed)">
+  <test thread-count="5" name="Some Test(failed)">
     <classes>
-      <class name="academyapi.CreateUserTestNegativeTest">
+      <class name="academyapi.VerifyJiraNumber">
         <methods>
-          <include name="createUserTestNegativeTest"/>
+          <include name="verifyJiraNumber"/>
         </methods>
-      </class> <!-- academyapi.CreateUserTestNegativeTest -->
+      </class> <!-- academyapi.VerifyJiraNumber -->
     </classes>
-  </test> <!-- Create User Test Negative Test(failed) -->
-</suite> <!-- Failed suite [Api test] -->
+  </test> <!-- Some Test(failed) -->
+</suite> <!-- Failed suite [My suite] -->

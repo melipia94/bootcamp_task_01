@@ -9,6 +9,10 @@ import org.pmw.tinylog.Logger;
 import academyapi.baseservice.BaseService;
 import academyapi.pojos.BankUsers;
 import academyapi.pojos.BugJira;
+import academyapi.pojos.Fields2;
+import academyapi.pojos.Fields;
+import academyapi.pojos.Issuetype;
+import academyapi.pojos.Project;
 import io.restassured.response.Response;
 
 /**
@@ -76,31 +80,38 @@ public class JiraServices extends BaseService {
     	return getStatusCodePost(response);
     }
     
-    public int createFirstJiraNumber(BugJira bugJira, String aut) {
+    public int createFirstJiraNumber(Fields2 fieldsParams, String aut) {
     	Response response ;
-    	response = requestPostMethod(url, bugJira.getFields2(), aut);
+    	response = requestPostMethod(url,fieldsParams, aut);
     	setFirstJiraNumber(response);
+    	Logger.info(getBodyResponse(response));
+      	Logger.info(getStatusCodePost(response));
     	return getStatusCodePost(response);
     }
     
-    public int createBug(Object bugJira, String aut) {
+    public int createBug(Object fields, String aut) {
     	Response response ;
-    	response = requestPostMethod(url, bugJira, aut);
-    	setFirstJiraNumber(response);
+    	response = requestPostMethod(url, fields, aut);
+    	setJiraNumber(response);
+    	Logger.info(getBodyResponse(response));
+    	Logger.info(getStatusCodePost(response));
     	return getStatusCodePost(response);
     }
     
-    public BugJira createPojoBug(String key, String summary, String description, String name) {
-    	BugJira bug = new BugJira();
-    	bug.setKey(key);
-    	bug.setProject();
-    	bug.setSummary(summary);
-    	bug.setDescription(description);
-    	bug.setName(name);
-    	bug.setIssueType();
-    	bug.setFields();
-    	bug.setFields2();
-    	return bug;
+    public Fields2 createPojoBug(String key, String summary, String description, String name) {
+   
+       Fields fields = new Fields();
+       Fields2 fields2 = new Fields2();
+       Project project = new Project();
+       Issuetype issueType = new Issuetype();
+       fields.setDescription(description);
+       fields.setSummary(summary);
+       project.setKey(key);
+       issueType.setName(name);
+       fields.setIssuetype(issueType);
+       fields.setProject(project);
+       fields2.setFields(fields);
+       return fields2;
      }
     public int getStatusCodePost(Response response) {
     	return getStatus(response);

@@ -48,9 +48,9 @@ public class BaseService {
         return response;
     }
     
-    public Response requestPostMethod(String url, Object object, String auto) {
+    public Response requestPostMethod(String url, Object object, String aut) {
         Response response;
-        response = given().contentType("application/json").header("Authorization","Basic "+auto).body(object).when().post(url);
+        response = given().contentType("application/json").header("Authorization","Basic "+aut).body(object).when().post(url);
         return response;
     }
     public Response requestPostMethodWithAutorization(String url, BankUsers bankUser) {
