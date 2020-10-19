@@ -1,0 +1,22 @@
+{
+	"place": "Bogotá",
+	"adults": "3 adultos",
+	"children": "1 niño",
+	"childAge": "9 años",
+	"rooms": "1 habitación",
+	"firstName": "Melissa",
+	"lastName": "Pineda",
+	"email": "melissa@gmail.com",
+	"phone": "573145674312",
+	"CCType": "MasterCard",
+	"CCNumber": "2567198223435641",
+	"CCMonth": "12 - dic",
+	"CCYear": "2024",
+	"CCCVC": "123",
+	"name": "Melissa",
+	"type": "simple",
+	"regular_price": "21.99",
+	"description" : "This product was created by Melissa Pineda",
+	"short_description": "Melissa's product",
+    "product_quantity": "7"
+}

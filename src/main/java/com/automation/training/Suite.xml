@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Final Exam Test" verbose="1">
+	<test name="BookingTest">
+		<classes> 
+		   <class name="com.automation.training.tests.BookingTest"> </class>
+		</classes>
+	</test>
+	<test name="ShoppingTest">
+		<classes> 
+		   <class name="com.automation.training.tests.ShoppingSiteTest"> </class>
+		</classes>
+	</test>
+</suite>
