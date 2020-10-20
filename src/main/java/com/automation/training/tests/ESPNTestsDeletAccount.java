@@ -15,7 +15,7 @@ public class ESPNTestsDeletAccount extends BaseTests{
 
 	@Test
 	public void testESPNDelete(){
-		ESPNHomePage home = getESPNHomePage();
+		ESPNHomePage  home = new ESPNHomePage(getDriver(), getURL());
 		LoginPage loginPage = home.goToLoginPage();
 	    home = loginPage.logIn("melipia103@prueba.com", "prueba123");
 		assertEquals("Melissa", home.checkUserName());

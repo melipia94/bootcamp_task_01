@@ -13,7 +13,7 @@ public class ESPNTestsCreateAccount extends BaseTests{
 	
 	@Test
 	public void testESPNCrearAccountSuccessful(){
-		ESPNHomePage home = getESPNHomePage();
+		ESPNHomePage  home = new ESPNHomePage(getDriver(), getURL());
 		LoginPage loginPage = home.goToLoginPage();
 	    SignUpPage signUpPage = loginPage.selectSignUp().putTheInformation("Melissa", "Pineda","melipia105@prueba.com", "prueba123" );
 		home = signUpPage.confirmInformation();
@@ -22,7 +22,7 @@ public class ESPNTestsCreateAccount extends BaseTests{
 	
 	@Test
 	public void testESPNCrearAccountEmailFailed(){
-		ESPNHomePage home = getESPNHomePage();
+		ESPNHomePage  home = new ESPNHomePage(getDriver(), getURL());
 		LoginPage loginPage = home.goToLoginPage();
 	    SignUpPage signUpPage = loginPage.selectSignUp().putTheInformation("Melissa", "Pineda","melipia55@");
 		assertEquals("Please enter a valid email address.", signUpPage.checkErrorMessageEmail());
@@ -30,7 +30,7 @@ public class ESPNTestsCreateAccount extends BaseTests{
 	
 	@Test
 	public void testESPNCrearAccountPasswordShort(){
-		ESPNHomePage home = getESPNHomePage();
+		ESPNHomePage  home = new ESPNHomePage(getDriver(), getURL());
 		LoginPage loginPage = home.goToLoginPage();
 	    SignUpPage signUpPage = loginPage.selectSignUp().putTheInformation("Melissa", "Pineda","melipia55@pruebas.com", "12");
 		assertEquals("The password is too short.", signUpPage.checkErrorMessagePassword());

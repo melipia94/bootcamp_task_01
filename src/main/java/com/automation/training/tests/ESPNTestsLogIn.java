@@ -13,7 +13,7 @@ public class ESPNTestsLogIn extends BaseTests{
 	
 	@Test
 	public void testESPNLogin(){
-		ESPNHomePage home = getESPNHomePage();
+		ESPNHomePage  home = new ESPNHomePage(getDriver(), getURL());
 		LoginPage loginPage = home.goToLoginPage();
 	    home = loginPage.logIn("melipia9@prueba.com", "prueba123");
 		assertEquals("Melissa", home.checkUserName());
@@ -21,7 +21,7 @@ public class ESPNTestsLogIn extends BaseTests{
 	
 	@Test
 	public void testESPNLoginFailedEmail(){
-		ESPNHomePage home = getESPNHomePage();
+		ESPNHomePage  home = new ESPNHomePage(getDriver(), getURL());
 		LoginPage loginPage = home.goToLoginPage().logInFail("melipi@prueba.com", "prueba123");
 		assertEquals("The credentials you entered are incorrect.\n" 
 				+ "Reminder: Passwords are case sensitive.", loginPage.checkMessage());
@@ -29,7 +29,7 @@ public class ESPNTestsLogIn extends BaseTests{
 	
 	@Test
 	public void testESPNLoginFailedPassword(){
-		ESPNHomePage home = getESPNHomePage();
+		ESPNHomePage  home = new ESPNHomePage(getDriver(), getURL());
 		LoginPage loginPage = home.goToLoginPage().logInFail("melipia9@prueba.com", "prueba");
 		assertEquals("The credentials you entered are incorrect.\n" 
 				+ "Reminder: Passwords are case sensitive.", loginPage.checkMessage());

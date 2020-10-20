@@ -7,11 +7,17 @@ import org.openqa.selenium.support.FindBy;
 
 public class ESPNHomePage extends BasePage  {
 
-	public ESPNHomePage(WebDriver driver) {
-		super(driver);
+	public ESPNHomePage(WebDriver driver, String url) {
+		super(driver, url);
 	
 		
 	}
+	
+	public ESPNHomePage(WebDriver driver) {
+		super(driver);
+	
+	}
+	
 	public By logOutBy = By.cssSelector("#global-user-trigger + div.global-user .account-management li a[onclick]");
 	public By profileBy = By.cssSelector("#global-user-trigger + div.global-user .account-management li a[tref]");
 	@FindBy(id = "global-user-trigger")

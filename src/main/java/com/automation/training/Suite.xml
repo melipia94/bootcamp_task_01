@@ -3,15 +3,30 @@
 <suite name="My test suite" verbose="1">
 	<parameter name="browser" value="chrome"/>
 
-      
-	<test name="My first test">
-   <parameter name="url" value="https://www.espn.com/?src=com&#38;_adblock=true"/>
+   
+ 
+       <test name="ESPNTestsCreateAccount">
+  <parameter name="url" value="https://www.espn.com/?src=com&#38;_adblock=true"/>
 		<classes> 
-
-		   <class name="com.automation.training.tests.ESPNTest"> </class>
-
-			
-
+		   <class name="com.automation.training.tests.ESPNTestsCreateAccount"> </class>
+		</classes>
+	</test>
+       <test name="ESPNTestsLogIn">
+  <parameter name="url" value="https://www.espn.com/?src=com&#38;_adblock=true"/>
+		<classes> 
+		   <class name="com.automation.training.tests.ESPNTestsLogIn"> </class>
+		</classes>
+	</test>
+       <test name="ESPNTestsLogOut">
+  <parameter name="url" value="https://www.espn.com/?src=com&#38;_adblock=true"/>
+		<classes> 
+		   <class name="com.automation.training.tests.ESPNTestsLogOut"> </class>
+		</classes>
+	</test>
+       <test name="ESPNTestsDeletAccount">
+  <parameter name="url" value="https://www.espn.com/?src=com&#38;_adblock=true"/>
+		<classes> 
+		   <class name="com.automation.training.tests.ESPNTestsDeletAccount"> </class>
 		</classes>
 	</test>
 </suite>

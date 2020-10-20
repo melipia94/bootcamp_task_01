@@ -16,6 +16,12 @@ public abstract class BasePage {
 	protected static WebDriver driver;
 	
 
+	public BasePage(WebDriver pDriver, String url) {
+		PageFactory.initElements(pDriver, this);
+		driver = pDriver;
+		getURL(url);
+	}
+
 	public BasePage(WebDriver pDriver) {
 		PageFactory.initElements(pDriver, this);
 		driver = pDriver;
@@ -25,7 +31,7 @@ public abstract class BasePage {
 		return driver;
 	}
 
-	public void dispose() {
+	public static void dispose() {
 		if (driver != null) {
 			driver.quit();
 		}

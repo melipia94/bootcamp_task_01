@@ -16,7 +16,7 @@ public class ESPNTestsLogOut extends BaseTests{
 
 	@Test
 	public void testESPNLogOut(){
-		ESPNHomePage home = getESPNHomePage();
+		ESPNHomePage  home = new ESPNHomePage(getDriver(), getURL());
 		LoginPage loginPage = home.goToLoginPage();
 	    home = loginPage.logIn("melipia9@prueba.com", "prueba123");
 		assertEquals("Melissa", home.checkUserName());
